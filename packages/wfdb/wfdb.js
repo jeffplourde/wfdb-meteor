@@ -1,0 +1,1 @@
+WFDB = Npm.require('wfdb');

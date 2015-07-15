@@ -1,0 +1,37 @@
+<head>
+  <title>WFDB Meteor Example</title>
+</head>
+
+<body>
+  <div class="container col-lg-12">
+  <br/>
+  <h2>Continuous Waveform Render</h2>
+  <h4>{{signal}}</h4>
+  <div>
+  <canvas id="plot" width="988" height="161">
+	<p style="color:white">
+		Please use a browser that supports the Canvas Element, like
+			<a href="http://www.google.com/chrome">Chrome</a>,
+			<a href="http://www.mozilla.com/firefox/">Firefox</a>,
+			<a href="http://www.apple.com/safari/">Safari</a> or Internet Explorer 10
+	</p>
+  </canvas>
+  <br/>
+
+  <div>Grid intervals: 0.2 sec, 0.5 mV (ECG)</div></div>
+  <br/>
+  <input type="checkbox" id="overwriteMode"/>Overwrite Mode<br/>
+  <br/>
+  Current cached Observation count: {{count}}
+  <h2>It's on FHIR!</h2>
+	<div>
+	      {{#each data}}
+	        {{> d}}
+	      {{/each}}
+	</div>
+</div>
+</body>
+
+<template name="d">
+      <pre class="pre-scrollable">{{format}}</pre>
+</template>
