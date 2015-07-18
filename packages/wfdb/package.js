@@ -2,7 +2,7 @@ Package.describe({
   summary: "WaveForm DataBase"
 });
 
-Npm.depends({wfdb: "0.0.6"});
+Npm.depends({wfdb: "0.0.7"});
 
 Package.on_use(function(api) {
   api.export('WFDB');
