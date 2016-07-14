@@ -1,20 +1,24 @@
 {
   "dependencies": {
+    "graceful-fs": {
+      "version": "3.0.8",
+      "resolved": "http://sinopia.jeffplourde.com/graceful-fs/-/graceful-fs-3.0.8.tgz",
+      "from": "graceful-fs@>=3.0.8 <4.0.0"
+    },
+    "minimist": {
+      "version": "0.0.8",
+      "resolved": "http://sinopia.jeffplourde.com/minimist/-/minimist-0.0.8.tgz",
+      "from": "minimist@0.0.8"
+    },
+    "mkdirp": {
+      "version": "0.5.1",
+      "resolved": "http://sinopia.jeffplourde.com/mkdirp/-/mkdirp-0.5.1.tgz",
+      "from": "mkdirp@>=0.5.1 <0.6.0"
+    },
     "wfdb": {
       "version": "0.0.7",
-      "dependencies": {
-        "graceful-fs": {
-          "version": "3.0.8"
-        },
-        "mkdirp": {
-          "version": "0.5.1",
-          "dependencies": {
-            "minimist": {
-              "version": "0.0.8"
-            }
-          }
-        }
-      }
+      "resolved": "http://sinopia.jeffplourde.com/wfdb/-/wfdb-0.0.7.tgz",
+      "from": "wfdb@0.0.7"
     }
   }
 }
